@@ -1,6 +1,7 @@
 import abc
 from typing import Optional
 
+
 # Visitor Design Patter
 class DeviceVisitor:
 
@@ -200,6 +201,7 @@ class AirQualitySensor(Sensor):
 
     def accept(self, visitor: DeviceVisitor):
         visitor.handle_air_quality_sensor(self)
+
 
 class Actuator(Device):
 
